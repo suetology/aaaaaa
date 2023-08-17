@@ -3,8 +3,8 @@ name = "rouille_example"
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
-rouille = "3.6.2"
+[dependencies.rouille]
+features = ["ssl"]
 
 [profile.release]
 strip = true
