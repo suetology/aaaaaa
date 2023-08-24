@@ -1,0 +1,17 @@
+[package]
+name = "rouille_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rouille = "3.6.2"
+ubus = { git = "https://github.com/jbit/ubus-rs" }
+serde = "1.0"
+serde_json = "1.0"
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+
